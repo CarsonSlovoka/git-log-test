@@ -1,0 +1,2 @@
+# 不列入GitHub的統計，這只是一個測試的範例
+main.go linguist-detectable=false
