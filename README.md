@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This project demonstrates the behavior of the `git log -L` command, which tracks changes to specific line ranges in a file (`main.go`) across commits.
+This project demonstrates the behavior of the `git log -L` (`git version 2.43.0`) command, which tracks changes to specific line ranges in a file (`main.go`) across commits.
 
 The examples below use two commits ([f68d0984] and [894f74de]) to show how `git log -L` handles different line range scenarios.
 
