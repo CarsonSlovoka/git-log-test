@@ -4,7 +4,7 @@
 
 This project demonstrates the behavior of the `git log -L` command, which tracks changes to specific line ranges in a file (`main.go`) across commits.
 
-The examples below use two commits (`f68d0984` and `894f74de`) to show how `git log -L` handles different line range scenarios.
+The examples below use two commits ([f68d0984] and [894f74de]) to show how `git log -L` handles different line range scenarios.
 
 
 Can you identify what possible scenarios might arise?
@@ -20,7 +20,7 @@ git log -L1,3:main.go -L6,10:main.go f68d0984^..f68d0984
 
 ### 1. Adding a New File
 
-The `main.go` file at commit `f68d0984` is a newly **added** file,
+The `main.go` file at commit [f68d0984] is a newly **added** file,
 
 so the git log at this point will only show one section, and no other sections will appear. (`-L6,10` miss)
 
@@ -92,7 +92,7 @@ git log -L11,14:main.go 894f74de^..894f74de
 ```
 ```
 
-Lines 11-14 in `main.go` have no changes in commit `894f74de`, so no output is produced.
+Lines 11-14 in `main.go` have no changes in commit [894f74de], so no output is produced.
 
 ---
 
@@ -137,5 +137,8 @@ main.go:15:
 +  ┊16┊        fmt.Println(VERSION)
 ```
 
-Line 5 and lines 15-16 are distinct ranges with changes in commit `894f74de`. The output shows changes for each range separately, with appropriate `diff` headers.
+Line 5 and lines 15-16 are distinct ranges with changes in commit [894f74de]. The output shows changes for each range separately, with appropriate `diff` headers.
 
+
+[f68d0984]: https://github.com/CarsonSlovoka/git-log-test/commit/f68d0984
+[894f74de]: https://github.com/CarsonSlovoka/git-log-test/commit/894f74de

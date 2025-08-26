@@ -16,7 +16,7 @@ git log -L1,3:main.go -L6,10:main.go f68d0984^..f68d0984
 
 ## 新增測試
 
-f68d0984 這個節點的的main.go是新增檔案，所以此時的git log只能有一段，其它的都不會出現
+[f68d0984] 這個節點的的main.go是新增檔案，所以此時的git log只能有一段，其它的都不會出現
 
 
 **Command:**
@@ -33,6 +33,8 @@ git log -L1,3:main.go -L6,10:main.go f68d0984^..f68d0984
 ```
 
 ## 同段測試
+
+[894f74de]
 
 `5-7` 和 `9-10` 都是同樣的一段，所以此時git log也只會出現一段而言(先給的)
 
@@ -119,3 +121,7 @@ main.go:15:
 -10┊  ┊        fmt.Println("0123456789")
 +  ┊16┊        fmt.Println(VERSION)
 ```
+
+
+[f68d0984]: https://github.com/CarsonSlovoka/git-log-test/commit/f68d0984
+[894f74de]: https://github.com/CarsonSlovoka/git-log-test/commit/894f74de
